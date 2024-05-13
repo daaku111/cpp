@@ -1,0 +1,11 @@
+-> 
+while compiling a cpp file, the compiler just need declarations of functions which are being used in the that cpp file. That declaration can be in the same file or the files which are being included. compiler seeks definition of those functions during the linking phase. If it gets the definitions of those functions in any of the file which are being linked to the file then no error.
+
+g++ file2.cpp file1.cpp -o exe
+
+this command will link these 2 files and make a common executabel exe.
+The functions declared and used in file2 may be defined in file1. File1 need not to be included in file2. these are linked during linking phase.
+
+
+->
+
